@@ -7,4 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'convertitoreAngular';
+
+
+/*
+
+   Configurazione Single Page Application
+
+  mostraConvertitori=false;
+  mostraCalcolatore=false;
+
+ apriConvertitori(){
+    console.log("aperto Convertitori");
+    this.mostraConvertitori=true;
+    this.mostraCalcolatore=false;
+    
+ }
+
+ apriCalcolatore(){
+    console.log("aperto Calcolatore");
+    this.mostraCalcolatore=true;
+    this.mostraConvertitori=false;
+ }
+
+*/
 }

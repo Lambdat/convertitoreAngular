@@ -1,0 +1,20 @@
+
+
+<!--attribute binding (preso dal .ts) -->
+<p [style]="stile">Inserisci il valore: </p>
+
+<input type="number" [(ngModel)]="valore">
+                    <!-- Two Way Binding (valore sincronizzato)-->
+
+
+<div *ngFor="let c of convertitori; let i=index">
+
+
+    <p>   <!-- Interpolation Binding (preso dal .ts)-->
+       <b>-{{i}}</b> Da {{c.convertiDa}} a {{c.convertiA}}  :  {{c.convertire(valore)}}
+    </p>
+
+
+
+</div>
+

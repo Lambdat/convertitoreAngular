@@ -1,0 +1,18 @@
+<p>selezione works!</p>
+
+<select  (change)="eventoSelect($event)">
+
+    
+
+    <option *ngFor="let conv of convertitori; let indice = index" [value]="indice">
+       Da {{conv.convertiDa}} a {{conv.convertiA}} 
+    </option>
+
+    
+</select>
+
+
+<p>Inserisci il Valore: </p> <!--[(ngModel)]="valoreUtente"-->
+<input type="number" (input)="inserisciValore($event)">
+
+<input type="text" readonly [value]="risultato">

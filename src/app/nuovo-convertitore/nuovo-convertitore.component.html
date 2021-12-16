@@ -1,0 +1,17 @@
+<p>Form Nuovo Convertitore</p>
+
+<input type="text" [(ngModel)]="unitaDa" placeholder="Unita Da...">
+
+<input type="text" [(ngModel)]="unitaA" placeholder="Unita A...">
+
+<input type="number" [(ngModel)]="coefficiente" placeholder="Coefficiente...">
+
+<br>
+
+<button (click)="aggiungiConvertitore($event)" (blur)="rimuoviEsito()">Inserisci Convertitore</button>
+
+<b>
+    <p style="background-color: forestgreen; color:white;">
+        {{esito}}
+    </p>
+</b>
